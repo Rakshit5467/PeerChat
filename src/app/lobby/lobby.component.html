@@ -1,0 +1,14 @@
+<div class="bg d-flex justify-content-center align-items-center">
+  <div class="form">
+    <div class="title d-flex justify-content-center">
+      <p>👋 Create OR Join a Room</p>
+    </div>
+    <div class="body p-3 d-flex flex-column align-items-center">
+      <mat-form-field appearance="fill" class="mt-2">
+        <mat-label>Enter room id</mat-label>
+        <input matInput placeholder="Do not include space" [(ngModel)] = "roomId">
+      </mat-form-field>
+      <button mat-raised-button color="style" (click)="navigateToRoom()" class="btn mt-2">Enter</button>
+    </div>
+  </div>
+</div>

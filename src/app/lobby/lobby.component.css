@@ -1,0 +1,48 @@
+.bg{
+    background-color: #262625;
+    height: 100%;
+    width: 100%;
+}
+
+p{
+    color: white;
+}
+
+.title{
+    color: white;
+    background-color: #363739;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 5% 5% 0 0 ;
+}
+
+.form{
+    width: 30%;
+    border-radius: 5%;
+}
+
+mat-form-field{
+    width: 85%;
+}
+
+.body{
+    background-color: #3f434a;
+    border-radius: 0 0 5% 5%;
+}
+
+.form-floating{
+    width: 100%;
+}
+
+@media  (max-width: 780px){
+    .form{
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .form{
+        height: 40%;
+        width: 60%;
+    }
+}

@@ -1,0 +1,18 @@
+<div id="videos">
+  <div class="row">
+    <div class="col" id="user1">
+      <video #localVideoPlayer class="video-player" autoplay></video>
+    </div>
+    <div class="col" id="user2">
+      <video #remoteVideoPlayer class="video-player" autoplay></video>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="controls d-flex flex-row justify-content-center">
+  <div class="control-container" id="camera" (click)="toggleCamera()"><img src="  assets/images/camera.png"></div>
+  <div class="control-container" id="mic" (click)="toggleMic()"><img src="assets/images/mic.png"></div>
+  <div class="control-container" id="leave" (click)="leave()"><img src="assets/images/phone.png"></div>
+</div>

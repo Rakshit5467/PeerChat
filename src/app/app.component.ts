@@ -1,13 +1,20 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import {
+  Component,
+} from '@angular/core';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { PeerchatComponent } from './peerchat/peerchat.component';
+import { LobbyComponent } from './lobby/lobby.component';
+declare const AgoraRTM: any;
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [CommonModule, PeerchatComponent, LobbyComponent, RouterOutlet],
+  styleUrls: ['./app.component.css'],
+  standalone: true,
 })
 export class AppComponent {
-  title = 'VChat';
+  title = 'WebRTC';
+
 }
